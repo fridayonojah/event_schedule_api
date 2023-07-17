@@ -13,7 +13,7 @@ export const config = {
   };
   
   export function openApiCredentials(): any {
-    return {[process.env.OPEN_API_USERNAME || 'task']: process.env.OPEN_API_PASSWORD || 'management'};
+    return {[process.env.OPEN_API_USERNAME || 'event']: process.env.OPEN_API_PASSWORD || 'management'};
   }
   
   export function redisUrl(): string {
