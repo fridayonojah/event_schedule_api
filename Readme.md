@@ -2,18 +2,18 @@
 
 # Introduction
 
-This is a NodeJs application written in Typescript and some enhancement. By applying some design patterns and design architecture, unit test and integration test mechanism against a real database, caching mechanism with Redis, documentation with open API, Docker, CI/CD stuffs, authentication using both JWT and HMAC signature that helps this application consideration as a NodeJS (Typescript) boilerplate.
+This is a NodeJs application written in Typescript and has some enhancements. By applying some design patterns and design architecture, unit test and integration test mechanism against a real database, caching mechanism with Redis, documentation with open API, Docker, CI/CD stuffs, authentication using both JWT and HMAC signature that helps this application consideration as a NodeJS (Typescript) boilerplate.
 
 # Why event schedule management application?
 
 The idea of creating this application is to handle real-life requirements using a strong Node JS (Typescript) application using some design patterns, architecture, and the proper testing mechanism that helps the application's stability and scalability.
 
-# Application's specifications
+# Application specifications
 
-Build a event schedule management API.
+Build an event schedule management API.
 
-- User is able to register through an endpoint
-- User is able login through an endpoint after registering
+- The user is able to register through an endpoint
+- The user is able login through an endpoint after registering
 - A user is able to submit a task through an endpoint.
 - The backend will consume the task (use a random timer delay to simulate some work).
 - Through another endpoint, the user can check the status of the task.
@@ -24,15 +24,15 @@ Build a event schedule management API.
 
 # Environment Install.
 
-Follow these steps below to make sure the application running in the correct way:
+Follow the steps below to make sure the application running in the correct way:
 
-- Makes sure you have installed `Mysql`, `Redis`, `NodeJs`, `PM2` on your local machine before stating the application
+- Makes sure you have installed `Mysql`, `Redis`, `NodeJs`, `PM2` on your local machine before starting the application
 - Otherwise, you should use `Docker Container` to host the application.
 
 # Application install instructions.
 
 - Run the command `npm i` to install all the application dependencies.
-- Modify `.env.example` file to `.env` and config the corresponding information into `.env` file
+- Modify the `.env.example` file to `.env` and config the corresponding information into `.env` file
 - Run the command `npm run lint` to checking the coding convention is strict.
 - Run the command `npm run format` to format the Typescript code styles.
 - Run the command `npm run migration:create` to create a database migration file.
@@ -54,7 +54,7 @@ First we need to change `NODE_ENV=production` in the `.env` file
 - After running `npm run start:prod` the application will migration database automatically in production environment.
 
 # Warning.
-- This app is still fully under development. No ready yet for production.
+- This app is still fully under development. Not ready yet for production.
 <!-- Run the application in Docker Environment:
 
 - Make sure your local machine has been installed the Docker container.
